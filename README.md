@@ -9,6 +9,10 @@ My dotfiles, using hyprland and waybar
 ![](./assets/2024-01-16_13-01-1705385860.png "Screenshots desktop") 
 > ⚠️ **Dashboard**: This eww dashboard is for 1366x768 desktop. If you want to use 1920x1080, check this one. ["Eww dashboard"](https://github.com/adi1090x/widgets) 
 
+### Waybar double bar
+![](./assets/2024-01-17_05-01-1705443008.png "Screenshots desktop") 
+![](./assets/2024-01-17_05-01-1705442978.png "Screenshots desktop") 
+
 
 ## Dependencies
 
@@ -53,8 +57,8 @@ Hyprland overview, for more information see this page [plugins](https://github.c
 
 ## Optionals
 
-Spotify : you can install spotify from the official [spotify](https://www.spotify.com/id-id/download/linux/?_ga=2.43341734.2058169428.1705407015-1022308288.1705407014) 
-and if you want to block some ads install this [spotify adblock](https://github.com/abba23/spotify-adblock) 
+Spotify : you can install Spotify from the official [Spotify](https://www.spotify.com/id-id/download/linux/?_ga=2.43341734.2058169428.1705407015-1022308288.1705407014) 
+and if you want to block some ads, install this [Spotify adblock](https://github.com/abba23/spotify-adblock) 
 
 ## Installation
 
@@ -63,7 +67,7 @@ and if you want to block some ads install this [spotify adblock](https://github.
 3. cp -rf .config/* ~/.config/ && cp -rf .local/share/fonts ~/.local/share/ && cp .local/share/icons ~/.local/share/ 
 
 > ℹ️ **Waybar**: I have two waybar settings, the first is the default waybar (one_bar) and the second is double_bar which has 2 bars at the top and 
-bottom. If you want to use double_bar, install waybar with this instead [waybar](https://aur.archlinux.org/packages/waybar-hyprland-cava-git)
+bottom. If you want to use double_bar, install waybar with this instead [waybar](https://aur.archlinux.org/packages/waybar-hyprland-cava-git) because the double_bar has cava in there
 
 ## Changes wallpapers
 To changes wallpapers you have three options
@@ -77,4 +81,33 @@ To changes wallpapers you have three options
    "$HOME/.config/hypr/scripts/change-wallpapers” if you never use swww before check the --help for more information
 
 ## Keybinding
+
+#### Apps Hotkeys
+
+| Apps                | Hotkeys            |
+| ------------------- | ------------------ |
+| Terminal (kitty)    | ALT + ENTER        |
+| Firefox             | ALT + F            |
+| File Manager        | ALT + E            |
+| Visual Studio Code  | SHIFT + ALT + C    |
+| Apps Launcher       | ALT + SPACE        |
+| Spotify             | WINDOWS + SPACE    |
+| Powermenu           | ALT + D            |
+| Color Picker        | SHIFT + ALT + P    |
+| Dashboard           | SHIFT + ALT + W    |
+| Screenshot          | WINDOWS + S        |
+
+#### Windows Management Hotkeys
+
+| Windows Manage      | Hotkeys            |
+| ------------------- | ------------------ |
+| Window Floating     | SHIFT + ALT + TAB  |
+| Kill Window         | ALT + Q            |
+| Fullscreen Window   | SHIFT + ALT + ENTER|
+| Split Window        | WINDOWS + SHIFT + S|
+| Change Focus Window | ALT + Up           |
+| Change Focus Window | ALT + Down         |
+| Change Focus Window | ALT + Left         |
+| Change Focus Window | ALT + Right        |
+
 
