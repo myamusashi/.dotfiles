@@ -1,14 +1,21 @@
 #!/bin/bash
 
+
+# Hyprland config
 hypr_windowrule="kitty lvim  ~/.config/hypr/windowrule.conf"
 hypr_env="kitty lvim ~/.config/hypr/env.conf"
 hypr_hyprland="kitty lvim ~/.config/hypr/hyprland.conf"
 hypr_keybind="kitty lvim ~/.config/hypr/keybinds.conf"
 hypr_startup="kitty lvim ~/.config/hypr/startup.conf"
 hypr_plugin="kitty lvim ~/.config/hypr/plugins.conf"
+
+# Waybar config
 waybar_config="kitty lvim ~/.config/waybar/c2onfig.jsonc"
 waybar_style="kitty lvim ~/.config/waybar/style.css"
+
+# Eww config
 eww_dasboard="kitty lvim ~/.config/eww/dashboard ."
+eww_toggle_setting="kitty lvim ~/.config/eww/"
 
 # Window configs
 WIDTH="300px"

@@ -1,5 +1,0 @@
-#!/bin/bash 
-
-killall -u waypaper-engine
-
-waypaper-engine 

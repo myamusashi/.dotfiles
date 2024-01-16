@@ -1,5 +1,4 @@
 clear
-neofetch
 
 # Shortcut
 alias update="sudo pacman -Syu"

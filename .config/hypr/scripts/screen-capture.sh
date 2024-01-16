@@ -1,14 +1,5 @@
 #!/bin/env bash
 
-wf-recorder_check() {
-	if pgrep -x "wf-recorder" > /dev/null; then
-			pkill -INT -x wf-recorder
-			notify-send "Stopping all instances of wf-recorder" "$(cat /tmp/recording.txt)"
-			wl-copy < "$(cat /tmp/recording.txt)"
-			exit 0
-	fi
-}
-
 SELECTION=$(echo -e "screenshot selection\nscreenshot eDP-1\nscreenshot HDMI-A-2\nscreenshot both screens" | fuzzel -d -p "󰄀 " -w 25 -l 6)
 
 IMG="$HOME/Pictures/screenshot/$(date +%Y-%m-%d_%H-%m-%s).png"
