@@ -1,0 +1,19 @@
+#!/bin/bash
+
+QUERY_EDP=$(cat ~/.cache/wallpaper)
+FILE_EDP=$(echo "$QUERY_EDP" | grep "eDP-1" | grep -oP '(?<=image: ).*\.png')
+OUTPUT_EDP=$(echo "$FILE_EDP")
+
+QUERY_HDMI=$(cat ~/.cache/wallpaper)
+FILE_HDMI=$(echo "$QUERY_HDMI" | grep "HDMI-A-2" | grep -oP '(?<=image: ).*\.png')
+OUTPUT_HDMI=$(echo "$FILE_HDMI")
+
+if [[ $(pidof swaybg) ]]; then
+  pkill swaybg
+fi
+
+swww query|| swww init 
+
+swww img $OUTPUT_EDP --outputs "eDP-1" --transition-bezier 1,.01,0,1.05 --transition-duration 2.1 --transition-type grow  --transition-step 255 --transition-pos top-right --transition-fps 60
+
+swww img $OUTPUT_HDMI --outputs "HDMI-A-2" --transition-bezier 1,.01,0,1.05 --transition-duration 2.1 --transition-type grow  --transition-step 255 --transition-pos top-right --transition-fps 60

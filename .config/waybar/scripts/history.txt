@@ -1,0 +1,927 @@
+{
+	"type" : "aa{sv}",
+	"data" : [
+		[
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ 🄼🄸🅁🄰🄲🄻🄴‎: Jadian ga lu pada‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ 🄼🄸🅁🄰🄲🄻🄴‎: Jadian ga lu pada‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 102
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 25169097584
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Ran‎: Uwohhhh‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Ran‎: Uwohhhh‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 101
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24814486039
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Daffa___‎: Ga percaya aku \nLeonardo messi pembohong soalnya‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Daffa___‎: Ga percaya aku \nLeonardo messi pembohong soalnya‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 100
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24546124693
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Daffa___‎: Yg mana‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Daffa___‎: Yg mana‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 99
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24409703569
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "p"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>Paceng</b>\np"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "Paceng"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 98
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24336223390
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Baker Street 221b‎: Tinggal nunggu ada penerbit mau jual Artbook anim‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Baker Street 221b‎: Tinggal nunggu ada penerbit mau jual Artbook anim‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 97
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24223289944
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ 🄼🄸🅁🄰🄲🄻🄴‎: UWOOGGGGHHHH‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ 🄼🄸🅁🄰🄲🄻🄴‎: UWOOGGGGHHHH‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 96
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24102586860
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "Lu udh nyoba ?"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>Zamzamokupa</b>\nLu udh nyoba ?"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "Zamzamokupa"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 95
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24010059878
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "Emng Iyah ?"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>Zamzamokupa</b>\nEmng Iyah ?"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "Zamzamokupa"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 94
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 24005205690
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ 🄼🄸🅁🄰🄲🄻🄴‎: Poster gratis per volume, halaman berwarna‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ 🄼🄸🅁🄰🄲🄻🄴‎: Poster gratis per volume, halaman berwarna‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 93
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 23973952191
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Baker Street 221b‎: Apalagi ada jomoknya🏃🏻‍♂️💨💨‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Baker Street 221b‎: Apalagi ada jomoknya🏃🏻‍♂️💨💨‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 92
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 23842711807
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Baker Street 221b‎: Mereka ini masih bingung untuk milih kertas, mau import tapi ragu‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Baker Street 221b‎: Mereka ini masih bingung untuk milih kertas, mau import tapi ragu‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 91
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 23711009997
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Baker Street 221b‎: Sayang monster banyak ngecewaiin kolektor manga‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Baker Street 221b‎: Sayang monster banyak ngecewaiin kolektor manga‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 90
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 23554072442
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Daffa___‎: Naoki urasawa‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Daffa___‎: Naoki urasawa‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 89
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 23393724565
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ 🄼🄸🅁🄰🄲🄻🄴‎: Sticker‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ 🄼🄸🅁🄰🄲🄻🄴‎: Sticker‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 88
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 22891286334
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Za‎: Gk salah keknya‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Za‎: Gk salah keknya‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 87
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 21839585797
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Chris‎: Yuta × Maki di 27 bisa-bisanya‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Chris‎: Yuta × Maki di 27 bisa-bisanya‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 86
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 21693670871
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Baker Street 221b‎: Ga salah bilang gojomok ya?‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Baker Street 221b‎: Ga salah bilang gojomok ya?‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 85
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 21425174648
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "Sticker"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>+62 882-9704-7726</b>\nSticker"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "+62 882-9704-7726"
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 84
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 21235689125
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			},
+			{
+				"body" : {
+					"type" : "s",
+					"data" : "~ Yapi‎: ngga sehat‎"
+				},
+				"message" : {
+					"type" : "s",
+					"data" : "<b>anicode (sakuga talk) </b>\n~ Yapi‎: ngga sehat‎"
+				},
+				"summary" : {
+					"type" : "s",
+					"data" : "anicode (sakuga talk) "
+				},
+				"appname" : {
+					"type" : "s",
+					"data" : "Firefox"
+				},
+				"category" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"default_action_name" : {
+					"type" : "s",
+					"data" : "default"
+				},
+				"icon_path" : {
+					"type" : "s",
+					"data" : ""
+				},
+				"id" : {
+					"type" : "i",
+					"data" : 83
+				},
+				"timestamp" : {
+					"type" : "x",
+					"data" : 21230552762
+				},
+				"timeout" : {
+					"type" : "x",
+					"data" : 5000000
+				},
+				"progress" : {
+					"type" : "i",
+					"data" : -1
+				}
+			}
+		]
+	]
+}

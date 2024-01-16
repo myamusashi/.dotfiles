@@ -1,0 +1,10 @@
+#!/bin/bash
+
+get_uptime() {
+	if [ "$kernel" = "Darwin" ]; then
+		up=$(uptime | awk 'NR==1{print $3}')
+		echo " ${up::-1}"
+	else
+		uptime -p | sed 's/up//'
+	fi
+}

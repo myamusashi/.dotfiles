@@ -1,0 +1,16 @@
+#!/bin/bash
+
+wall=$(find $HOME/Pictures/wallpapers/ -type f  -name "*.png" | shuf -n 1)
+wall1=$(ls $HOME/Pictures/wallpapers/*.png | awk 'BEGIN { srand() } { lines[NR] = $0 } END { print lines[randint(1, NR)] } function randint(min, max) { return min + int(rand() * (max - min + 1)) }')
+# swww kill
+swww init
+
+swww img $wall --outputs "eDP-1" --transition-bezier 1,.01,0,1.05 --transition-duration 2.1 --transition-type grow  --transition-step 255 --transition-pos top-right --transition-fps 60
+
+
+swww img $wall1 --outputs "HDMI-A-2" --transition-bezier 1,.01,0,1.05 --transition-duration 2.1 --transition-type grow  --transition-step 255 --transition-pos top-right --transition-fps 60
+
+
+
+rm -f ~/.cache/wallpaper
+swww query >> ~/.cache/wallpaper

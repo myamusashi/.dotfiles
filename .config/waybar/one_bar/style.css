@@ -1,0 +1,128 @@
+/* Catppuccin Mocha */
+* {
+  all: unset;
+  margin-right: 6px;
+  margin-left: 6px; }
+
+tooltip {
+  background: #eff1f5;
+  border-radius: 1rem; }
+
+tooltip label {
+  color: #4c4f69; }
+
+window.eDP-1 {
+  background-color: #eff1f5;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 14px;
+  border: 3px solid #3fd0d4;
+  border-radius: 50px; }
+
+window {
+  background-color: #eff1f5;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 16px;
+  border: 3px solid #3fd0d4;
+  border-radius: 50px; }
+
+#custom-shutdown {
+  padding: 0 0 0 0;
+  margin: 4px 0 6px 0;
+  min-width: 34px;
+  font-size: 20px;
+  border-radius: 10px 30px 30px 10px;
+  background-color: #363A4F;
+  color: #E83F34; }
+
+#custom-shutdown button:hover {
+  background-color: #eff1f5;
+  color: #363A4F; }
+
+#workspaces {
+  background-color: #dce0e8;
+  border-radius: 20px;
+  margin: 5px; }
+
+#workspaces button {
+  color: #9ca0b0;
+  padding: 0 1px;
+  font-size: 20px; }
+
+#workspaces button.active {
+  color: #1e66f5; }
+
+#workspaces button.urgent {
+  color: #d20f39; }
+
+#window {
+  font-weight: bold;
+  color: #dd7878; }
+
+#custom-weather,
+#clock {
+  margin: 0 2px;
+  color: #4c4f69; }
+
+#temperature {
+  color: #04a5e5; }
+
+#temperature.critical {
+  color: #ff0000;
+  margin-right: 2px; }
+
+#cpu {
+  color: #d20f39; }
+
+#memory,
+#disk,
+#battery,
+#custom-change-wallpaper {
+  color: #209fb5; }
+
+#backlight {
+  color: #df8e1d; }
+
+#pulseaudio {
+  color: #8839ef; }
+
+#pulseaudio.bluetooth {
+  color: #1e66f5; }
+
+#pulseaudio.muted {
+  color: #9ca0b0; }
+
+#network {
+  color: #fe640b; }
+
+#network.disabled {
+  color: #d20f39; }
+
+#network.disconnected {
+  color: #ff0000; }
+
+#custom-weather.severe {
+  color: #fe640b; }
+
+#custom-weather.sunnyDay {
+  color: #df8e1d; }
+
+#custom-weather.clearNight {
+  color: #1e66f5; }
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+  color: #54514f; }
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+  color: #179299; }
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+  color: #3fd0d4; }
+
+#custom-weather.default {
+  color: #209fb5; }
+
+#tray {
+  background-color: #ccd0da;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 5px; }

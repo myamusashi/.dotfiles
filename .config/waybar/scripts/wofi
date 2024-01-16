@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wofi --show drun -o eDP-1 --conf /home/$USER/.config/wofi/config --style /home/$USER/.config/wofi/style.css

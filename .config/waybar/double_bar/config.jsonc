@@ -1,0 +1,296 @@
+[
+    {
+        "layer": "bottom",
+        "position": "top",
+        "height": 25,
+        "modules-left": [
+            "custom/wmname",
+            "hyprland/workspaces",
+            "wlr/workspaces",
+            "hyprland/window"
+        ],
+        "modules-center": [
+            "clock",
+            "custom/weather"
+        ],
+        "modules-right": [
+            "cava",
+            "pulseaudio"
+        ],
+        "hyprland/workspaces": {
+            "all-outputs": true,
+            "format": "{icon}",
+            "format-icons": {
+                "1": "",
+                "2": "",
+                "3": "",
+                "4": "",
+                "5": "",
+                "6": "",
+                "7": "",
+                "8": "",
+                "9": "",
+                "10": "",
+                "urgent": "",
+            }
+        },
+        "hyprland/window": {
+            "format": "  {}",
+            "seperate-outputs": true
+        },
+        "custom/wmname": {
+            "format": "",
+            "tooltip": false,
+            "on-scroll-down": "/usr/local/bin/hyprctl dispatch workspace m+1",
+            "on-scroll-up": "/usr/local/bin/hyprctl dispatch workspace m-1",
+            "on-click-right": "$HOME/.config/rofi/powermenu/type-4/powermenu.sh",
+            "on-click-middle": "~/.config/rofi/launchers/type-6/launcher.sh"
+        },
+        "cava": {
+            "autosens": 1,
+            "bar_delimiter": 0,
+            "bars": 6,
+            "format-icons": [
+                "<span class='cava-bars' foreground='#dce0e8'>▁ </span>",
+                "<span class='cava-bars' foreground='#dce0e8'>▂ </span>",
+                "<span class='cava-bars' foreground='#dce0e8'>▃ </span>",
+                "<span class='cava-bars' foreground='#dce0e8'>▄ </span>",
+                "<span class='cava-bars' foreground='#dce0e8'>▅ </span>"
+            ],
+            "framerate": 60,
+            "higher_cutoff_freq": 10000,
+            "input_delay": 1,
+            "lower_cutoff_freq": 50,
+            "method": "pulse",
+            "monstercat": true,
+            "reverse": false,
+            "source": "auto",
+            "stereo": true,
+            "waves": false
+        },
+        "clock": {
+            "timezone": "Asia/Jakarta",
+            "format": "{:%H:%M:%S}",
+            "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+            "format-alt": "{:%H:%M:%S %a %Y-%m-%d}",
+            "interval": 1
+        },
+        "custom/weather": {
+            "exec": "python3 ~/.config/waybar/scripts/weather.py",
+            "restart-interval": 100,
+            "return-type": "json",
+            "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/5cf75b1f778e8c154ed0390dd5263691ed4a85fa1ca33d8aa1488c3ada96dc4a"
+        },
+        "pulseaudio": {
+            "format": "{icon}  {volume}%",
+            "format-bluetooth": "{icon}  {volume}%",
+            "format-muted": "",
+            "format-icons": {
+                "headphone": " ",
+                "hands-free": " ",
+                "headset": " ",
+                "phone": "",
+                "portable": "",
+                "car": "",
+                "default": [
+                    "",
+                    ""
+                ]
+            },
+            "scroll-step": 1,
+            "on-click-right": "pavucontrol",
+            "ignored-sinks": []
+        },
+    },
+    {
+        "height": 15,
+        "name": "bottom",
+        "layer": "top",
+        "margin": "0px 0px 0px 0px",
+        "position": "bottom",
+        "modules-right": [
+            "backlight",
+            "battery",
+            "bluetooth",
+            "custom/change-wallpaper",
+            "tray",
+            "network"
+        ],
+        "modules-center": [
+            "custom/spotify",
+            "custom/label"
+        ],
+        "modules-left": [
+            "keyboard-state",
+            "temperature",
+            "cpu",
+            "memory",
+            "disk"
+        ],
+        "tray": {
+            "icon-size": 21,
+            "spacing": 1
+        },
+        "keyboard-state": {
+            "interval": 1,
+            "numlock": false,
+            "capslock": true,
+            "format": {
+                "capslock": " {icon}"
+            },
+            "format-icons": {
+                "locked": "",
+                "unlocked": ""
+            },
+            "spacing": 6
+        },
+        "cpu": {
+            "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% 󰍛",
+            "interval": 5,
+            "format-icons": [
+                "▁",
+                "▂",
+                "▃",
+                "▄",
+                "▅"
+            ],
+            "on-click-right": "gnome-system-monitor",
+        },
+        "memory": {
+            "interval": 10,
+            "format": "{icon}  {percentage}%",
+            "format-alt": "{icon}  {used:0.1f}G/{total:0.1f}G",
+            "format-alt-click": "click",
+            "tooltip": true,
+            "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
+            "on-click-right": "kitty --title btop sh -c 'btop'",
+            "format-icons": [
+                "",
+            ]
+        },
+        "network": {
+            "format-wifi": "󰤨   ({signalStrength}%)",
+            "format-ethernet": "󱘖 ",
+            "tooltip-format": "󱘖  {ipaddr}",
+            "format-linked": "󱘖  {ifname} (No IP)",
+            "format-disconnected": " ",
+            "format-alt": "  {bandwidthUpBytes}   {bandwidthDownBytes}",
+            "on-click-right": "XDG_CURRENT_DESKTOP=gnome gnome-control-center",
+            "interval": 5
+        },
+        "temperature": {
+            "critical-threshold": 80,
+            "format": "{icon} {temperatureC}°C",
+            "format-icons": [
+                "",
+                "",
+                "",
+                "",
+                ""
+            ]
+        },
+        "custom/spotify": {
+            "exec": "/usr/bin/python3 /home/gilang/.config/waybar/scripts/mediaplayer.py --player spotify",
+            "format": "{icon}",
+            "return-type": "json",
+            "on-click": "playerctl play-pause --player spotify",
+            "on-click-right": "playerctl next --player spotify",
+            "on-click-middle": "playerctl previous --player spotify",
+            "on-scroll-up": "~/.config/waybar/scripts/spotifyvolume-control.sh up",
+            "on-scroll-down": "~/.config/waybar/scripts/spotifyvolume-control.sh down",
+            "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+            "escape": true,
+            "format-icons": {
+                "Playing": "<span foreground='#1DB954'>玲  怜</span>",
+                "Paused": "<span foreground='#a6da95'>玲 契 怜</span>"
+            },
+        },
+        "custom/label": {
+            "format": "  <span>{}</span>",
+            "return-type": "json",
+            "max-length": 48,
+            "exec": "playerctl -a metadata --format '{\"text\": \"{{artist}} - {{markup_escape(title)}}\", \"tooltip\": \"{{playerName}} : {{markup_escape(title)}}\", \"alt\": \"{{status}}\", \"class\": \"{{status}}\"}' -F",
+            "on-click": "playerctl play-pause --player spotify",
+            "on-click-right": "playerctl next --player spotify",
+            "on-click-middle": "playerctl previous --player spotify",
+        },
+        "custom/change-wallpaper": {
+            "on-click-right": "bash $HOME/.config/hypr/scripts/change-wallpapers",
+            "format": "{icon}",
+            "format-icons": "者",
+        },
+        "backlight": {
+            // "device": "acpi_video1",
+            "format": "{icon} {percent}%",
+            "format-icons": [
+                "",
+                "",
+                ""
+            ],
+            "states": {
+                "low": 0,
+                "mid": 50,
+                "high": 75
+            }
+        },
+        "battery": {
+            "states": {
+                "good": 95,
+                "warning": 30,
+                "critical": 15
+            },
+            "tooltip-format": "{time} {capacity}%",
+            "format": "{icon}",
+            "format-charging": "{icon}",
+            "format-plugged": "{icon}",
+            "format-icons": {
+                "default": [
+                    "󰁺",
+                    "󰁻",
+                    "󰁼",
+                    "󰁽",
+                    "󰁾",
+                    "󰁿",
+                    "󰂀",
+                    "󰂁",
+                    "󰂂",
+                    "󰁹"
+                ],
+                "charging": [
+                    "󰢜",
+                    "󰂆",
+                    "󰂇",
+                    "󰂈",
+                    "󰢝",
+                    "󰂉",
+                    "󰢞",
+                    "󰂊",
+                    "󰂋",
+                    "󰂅"
+                ],
+                "plugged": "󰚥"
+            }
+        },
+        "battery#bat2": {
+            "bat": "BAT2"
+        },
+        "bluetooth": {
+            "format": " {status}",
+            "format-disable": "",
+            "format-connected": " {num_connections} connected",
+            "tooltip-format": "{controller_alias}\t{controller_address}",
+            "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+            "format-connected-battery": " - 󰥈  {device_battery_percentage}%",
+            "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
+        },
+        "disk": {
+            "interval": 100,
+            //"format": "󰋊",
+            "path": "/",
+            //"format-alt-click": "click",
+            "format": "{percentage_used}% ",
+            //"tooltip": true,
+            "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
+        },
+    }
+]

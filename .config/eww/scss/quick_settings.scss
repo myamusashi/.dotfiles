@@ -1,0 +1,62 @@
+.quick_settings_button {
+    transition: 500ms;
+    background-color: #b5bfe2;
+    color: #4c4f69;
+    border-radius: 1.5rem;
+    padding: 0.75rem;
+    font-size: 1.05rem;
+}
+
+.quick_settings_button:hover {
+    background-color: mix(#c6d0f5, $onSurfaceVariant, 70%);
+}
+
+.quick_settings_button_toggled {
+    background-color: #ed8796;
+    color: $surface;
+}
+
+.quick_settings_button_toggled:hover {
+    background-color: mix(#eff1f5, $onSurface, 70%);
+}
+
+.quick_settings_box {
+    margin-top: 1rem;
+}
+
+.quick-settings-icon {
+    font-size: 1.3rem;
+}
+
+.quick-settings-info {
+    margin-left: 1rem;
+}
+
+.quick-settings-state {
+    font-size: 0.9rem;
+    color: #6c6f85;
+}
+
+.quick-settings-state-enabled {
+    color: $surfaceVariant;
+}
+
+.left-top-plite {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.left-bottom-plite {
+    margin-right: 0.25rem;
+    margin-top: 0.25rem;
+}
+
+.right-top-plite {
+    margin-left: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+.right-bottom-plite {
+    margin-left: 0.25rem;
+    margin-top: 0.25rem;
+}

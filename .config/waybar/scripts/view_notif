@@ -1,0 +1,4 @@
+#!/bin/bash 
+content=$(cat ./notification_history.txt | sed 's/"/\\"/g')
+
+echo "{\"text\": \"$content\"}"

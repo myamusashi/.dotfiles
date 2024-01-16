@@ -1,0 +1,89 @@
+#!/bin/bash
+
+hypr_windowrule="kitty lvim  ~/.config/hypr/windowrule.conf"
+hypr_env="kitty lvim ~/.config/hypr/env.conf"
+hypr_hyprland="kitty lvim ~/.config/hypr/hyprland.conf"
+hypr_keybind="kitty lvim ~/.config/hypr/keybinds.conf"
+hypr_startup="kitty lvim ~/.config/hypr/startup.conf"
+hypr_plugin="kitty lvim ~/.config/hypr/plugins.conf"
+waybar_config="kitty lvim ~/.config/waybar/c2onfig.jsonc"
+waybar_style="kitty lvim ~/.config/waybar/style.css"
+eww_dasboard="kitty lvim ~/.config/eww/dashboard ."
+
+# Window configs
+WIDTH="300px"
+HEIGHT="250px"
+
+# Window styles
+CONFIG="$HOME/.config/wofi/config"
+STYLE="$HOME/.config/wofi/style.css"
+COLORS="$HOME/.config/wofi/colors"
+
+# Command
+wofi_command="wofi --show dmenu \
+            --prompt choose... \
+            --conf $CONFIG \
+            --style $STYLE \
+            --color $COLORS \
+            --width=$WIDTH \
+            --height=$HEIGHT \
+            --cache-file=/dev/null \
+            --hide-scroll \
+            --no-actions \
+            --matching=fuzzy"
+
+menu() {
+    echo "hypr windowrule"
+    echo "hypr env"
+    echo "hypr hyprland"
+    echo "hypr keybind"
+    echo "hypr startup"
+    echo "hypr plugins"
+    echo "waybar config"
+    echo "waybar styles"
+    echo "eww dashboard"
+}
+
+main() {
+    choice=$(menu | eval "${wofi_command}")
+    
+    case "$choice" in
+        "hypr windowrule")
+            eval "$hypr_windowrule"
+            ;;
+        "hypr env")
+            eval "$hypr_env"
+            # Tambahkan perintah yang ingin Anda jalankan untuk pilihan ini di sinis
+            ;;
+        "hypr hyprland")
+            eval "$hypr_hyprland"
+            # Tambahkan perintah yang ingin Anda jalankan untuk pilihan ini di sinis
+            ;;
+        "hypr keybind")
+            eval "$hypr_keybind"
+            # Tambahkan perintah yang ingin Anda jalankan untuk pilihan ini di sinis
+           ;;
+        "hypr plugins")
+            eval "$hypr_plugin"
+            ;;
+        "hypr startup")
+            eval "$hypr_startup"
+            ;;
+        "waybar config")
+            eval "$waybar_config"
+            # Tambahkan perintah yang ingin Anda jalankan untuk pilihan ini di sinis
+            ;;
+        "waybar styles")
+            eval "$waybar_style"
+            ;;
+        "eww dashboard")
+            eval "$eww_dasboard"
+            ;;
+        *)
+            echo "Pilihan tidak valid: $choice"
+            ;;
+    esac
+}
+
+main
+

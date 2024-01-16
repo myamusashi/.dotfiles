@@ -1,0 +1,194 @@
+$critical: #ff0000;
+$warning: #f3f809;
+$fgcolor: #ffffff;
+$bgcolor1: #eff1f5;
+$bgcolor2: #dce0e8;  // Changed the variable name here
+$alert: #df3320;
+$shutdown: #E83F34;
+$bgshutdown: #363A4F;
+$firefox: #F2653D;
+$fog: #54514f;
+
+/* Catppuccin Mocha */
+$Rosewater: #dc8a78;
+$Flamingo: #dd7878;
+$Pink: #ea76cb;
+$Mauve: #8839ef;
+$Red: #d20f39;
+$Maroon: #e64553;
+$Peach: #fe640b;
+$Yellow: #df8e1d;
+$Green: #40a02b;
+$Teal: #179299;
+$Sky: #04a5e5;
+$Ice: #3fd0d4;
+$Sapphire: #209fb5;
+$Blue: #1e66f5;
+$Lavender: #7287fd;
+$Text: #4c4f69;
+$Subtext1: #5c5f77;
+$Subtext0: #6c6f85;
+$Overlay2: #7c7f93;
+$Overlay1: #8c8fa1;
+$Overlay0: #9ca0b0;
+$Surface2: #acb0be;
+$Surface1: #bcc0cc;
+$Surface0: #ccd0da;
+$Base: #eff1f5;
+$Mantle: #e6e9ef;
+$Crust: #dce0e8;
+
+
+* {
+    all: unset;
+    margin-right: 6px;
+    margin-left: 6px;
+}
+
+tooltip {
+    background: $Base;
+    border-radius: 1rem;
+}
+
+tooltip label {
+    color: $Text;
+}
+
+window.eDP-1  {
+    background-color: $bgcolor1;
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-size: 14px;
+    border: 3px solid $Ice;
+    border-radius: 50px;
+}
+
+window  {
+    background-color: $bgcolor1;
+    font-family: "JetBrainsMono Nerd Font Mono";
+    font-size: 16px;
+    border: 3px solid $Ice;
+    border-radius: 50px;
+}
+
+#custom-shutdown {
+    padding: 0 0 0 0;
+    margin: 4px 0 6px 0;
+    min-width: 34px;
+    font-size: 20px;
+    border-radius: 10px 30px 30px 10px;
+    background-color: $bgshutdown;
+    color: $shutdown;
+}
+
+#workspaces {
+    background-color: $bgcolor2;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+#workspaces button {
+    color: $Overlay0;
+    padding: 0 1px;
+    font-size: 20px;
+}
+
+#workspaces button.active {
+    color: $Blue;
+}
+
+#workspaces button.urgent {
+    color: $Red;
+}
+
+#window {
+    font-weight: bold;
+    color: $Flamingo;
+}
+
+#custom-weather,
+#clock {
+    margin: 0 2px;
+    color: $Text;
+}
+
+#temperature {
+    color: $Sky;
+}
+#temperature.critical {
+    color: $critical;
+    margin-right: 2px;
+}
+
+#cpu {
+    color: $Red;
+}
+
+#memory,
+#disk,
+#battery,
+#custom-change-wallpaper {
+    color: $Sapphire;
+}
+
+#backlight {
+    color: $Yellow;
+}
+
+#pulseaudio {
+    color: $Mauve;
+}
+
+#pulseaudio.bluetooth {
+    color: $Blue;
+}
+
+#pulseaudio.muted {
+    color: $Overlay0;
+}
+
+#network {
+    color: $Peach;
+}
+
+#network.disabled {
+    color: $Red;
+}
+
+#network.disconnected {
+    color: $critical;
+}
+
+#custom-weather.severe {
+    color: $Peach;
+}
+
+#custom-weather.sunnyDay {
+    color: $Yellow;
+}
+
+#custom-weather.clearNight {
+    color: $Blue;
+}
+
+#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
+    color: $fog;
+}
+
+#custom-weather.rainyDay, #custom-weather.rainyNight {
+    color: $Teal;
+}
+
+#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
+    color: $Ice;
+}
+
+#custom-weather.default {
+    color: $Sapphire;
+}
+
+#tray {
+    background-color: $Surface0;
+    border-width: 2px;
+    border-radius: 10px;
+    margin: 5px;
+}
