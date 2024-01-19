@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export DISPLAY=:0
+export DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/1000/bus"
+
+BATTERY_CHARGING=$(acpi -b | grep -c "Discharging")
+BATTERY_LEVEL_BAT0=`acpi -b | grep "Battery 0" | grep -P -o '[0-9]+(?=%)'`
+BATTERY_LEVEL_BAT1=`acpi -b | grep "Battery 1" | grep -P -o '[0-9]+(?=%)'`
+
+if [[ $BATTERY_CHARGING -eq 1 ]]; then
+    notify-send -a "Charging notify" 'Charging' "Bat 0: ${BATTERY_LEVEL_BAT0}% and Bat 1:${BATTERY_LEVEL_BAT1}% of battery charged." -i ~/.local/share/icons/battery.png
+elif [[ $BATTERY_CHARGING -eq 0 ]]; then
+    notify-send -a "Charging notify" "Discharging" "Bat 0: ${BATTERY_LEVEL_BAT0}% and Bat 1:${BATTERY_LEVEL_BAT1}% of battery remaining" -i ~/.local/share/icons/charging-status.png
+fi
