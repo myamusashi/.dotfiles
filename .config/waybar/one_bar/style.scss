@@ -1,194 +1,172 @@
-$critical: #ff0000;
-$warning: #f3f809;
-$fgcolor: #ffffff;
-$bgcolor1: #eff1f5;
-$bgcolor2: #dce0e8;  // Changed the variable name here
-$alert: #df3320;
-$shutdown: #E83F34;
-$bgshutdown: #363A4F;
-$firefox: #F2653D;
-$fog: #54514f;
-
-/* Catppuccin Mocha */
-$Rosewater: #dc8a78;
-$Flamingo: #dd7878;
-$Pink: #ea76cb;
-$Mauve: #8839ef;
-$Red: #d20f39;
-$Maroon: #e64553;
-$Peach: #fe640b;
-$Yellow: #df8e1d;
-$Green: #40a02b;
-$Teal: #179299;
-$Sky: #04a5e5;
-$Ice: #3fd0d4;
-$Sapphire: #209fb5;
-$Blue: #1e66f5;
-$Lavender: #7287fd;
-$Text: #4c4f69;
-$Subtext1: #5c5f77;
-$Subtext0: #6c6f85;
-$Overlay2: #7c7f93;
-$Overlay1: #8c8fa1;
-$Overlay0: #9ca0b0;
-$Surface2: #acb0be;
-$Surface1: #bcc0cc;
-$Surface0: #ccd0da;
-$Base: #eff1f5;
-$Mantle: #e6e9ef;
-$Crust: #dce0e8;
-
+@import "colors/frappe_";
 
 * {
-    all: unset;
-    margin-right: 6px;
-    margin-left: 6px;
+  all: unset;
+  margin-right: 6px;
+  margin-left: 6px;
 }
 
 tooltip {
-    background: $Base;
-    border-radius: 1rem;
+  background: $Base;
+  border-radius: 1rem;
 }
 
 tooltip label {
-    color: $Text;
+  color: $Text;
 }
 
-window.eDP-1  {
-    background-color: $bgcolor1;
-    font-family: "JetBrainsMono Nerd Font Mono";
-    font-size: 14px;
-    border: 3px solid $Ice;
-    border-radius: 50px;
+window.eDP-1 {
+  background-color: $bgcolor1;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 14px;
+  border: 2px solid $Ice;
+  border-radius: 1.5rem;
 }
 
-window  {
-    background-color: $bgcolor1;
-    font-family: "JetBrainsMono Nerd Font Mono";
-    font-size: 16px;
-    border: 3px solid $Ice;
-    border-radius: 50px;
+window {
+  background-color: $bgcolor1;
+  font-family: "JetBrainsMono Nerd Font Mono";
+  font-size: 15px;
+  border: 2px solid $Ice;
+  border-radius: 1.5rem;
 }
 
 #custom-shutdown {
-    padding: 0 0 0 0;
-    margin: 4px 0 6px 0;
-    min-width: 34px;
-    font-size: 20px;
-    border-radius: 10px 30px 30px 10px;
-    background-color: $bgshutdown;
-    color: $shutdown;
+  padding: 0 0 0 0;
+  margin: 4px 0 6px 0;
+  min-width: 34px;
+  font-size: 20px;
+  border-radius: 10px 30px 30px 10px;
+  // background-color: $Mantle;
+  color: $shutdown;
 }
 
 #workspaces {
-    background-color: $bgcolor2;
-    border-radius: 20px;
-    margin: 5px;
+  background-color: $bgcolor2;
+  border: 2px solid $Text;
+  border-radius: 10px;
+  margin: 5px;
 }
 
 #workspaces button {
-    color: $Overlay0;
-    padding: 0 1px;
-    font-size: 20px;
+  color: $button;
+  padding: 0 1px;
+  font-size: 20px;
 }
 
 #workspaces button.active {
-    color: $Blue;
+  font-weight: bold;
+  color: $Sapphire;
+  border-bottom: 2px solid $Blue;
+}
+
+#workspaces button.empty {
+  color: $empty;
 }
 
 #workspaces button.urgent {
-    color: $Red;
+  color: $Red;
+}
+
+#workspaces button.visible {
+  color: $Lavender;
 }
 
 #window {
-    font-weight: bold;
-    color: $Flamingo;
+  font-weight: bold;
+  font-size: 14px;
+  color: $Flamingo;
 }
 
 #custom-weather,
 #clock {
-    margin: 0 2px;
-    color: $Text;
+  margin: 0 2px;
+  color: $Text;
 }
 
 #temperature {
-    color: $Sky;
+  color: $Sky;
 }
 #temperature.critical {
-    color: $critical;
-    margin-right: 2px;
+  color: $critical;
+  margin-right: 2px;
 }
 
 #cpu {
-    color: $Red;
+  color: $Red;
 }
 
 #memory,
 #disk,
 #battery,
 #custom-change-wallpaper {
-    color: $Sapphire;
+  color: $Sapphire;
 }
 
 #backlight {
-    color: $Yellow;
+  color: $Yellow;
 }
 
 #pulseaudio {
-    color: $Mauve;
+  color: $Mauve;
 }
 
 #pulseaudio.bluetooth {
-    color: $Blue;
+  color: $Blue;
 }
 
 #pulseaudio.muted {
-    color: $Overlay0;
+  color: $Overlay0;
 }
 
 #network {
-    color: $Peach;
+  color: $Peach;
 }
 
 #network.disabled {
-    color: $Red;
+  color: $Red;
 }
 
 #network.disconnected {
-    color: $critical;
+  color: $critical;
 }
 
 #custom-weather.severe {
-    color: $Peach;
+  color: $Peach;
 }
 
 #custom-weather.sunnyDay {
-    color: $Yellow;
+  color: $Yellow;
 }
 
 #custom-weather.clearNight {
-    color: $Blue;
+  color: $Blue;
 }
 
-#custom-weather.cloudyFoggyDay, #custom-weather.cloudyFoggyNight {
-    color: $fog;
+#custom-weather.cloudyFoggyDay,
+#custom-weather.cloudyFoggyNight {
+  color: $fog;
 }
 
-#custom-weather.rainyDay, #custom-weather.rainyNight {
-    color: $Teal;
+#custom-weather.rainyDay,
+#custom-weather.rainyNight {
+  color: $Teal;
 }
 
-#custom-weather.showyIcyDay, #custom-weather.snowyIcyNight {
-    color: $Ice;
+#custom-weather.showyIcyDay,
+#custom-weather.snowyIcyNight {
+  color: $Ice;
 }
 
 #custom-weather.default {
-    color: $Sapphire;
+  color: $Sapphire;
 }
 
 #tray {
-    background-color: $Surface0;
-    border-width: 2px;
-    border-radius: 10px;
-    margin: 5px;
+  background-color: $Surface0;
+  color: $Text;
+  border: 1px solid $Text;
+  border-width: 2px;
+  border-radius: 10px;
+  margin: 5px;
 }
