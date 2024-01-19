@@ -1,12 +1,12 @@
 -- User options reload
-reload("user.options")
-reload("user.plugins")
-reload("user.colorscheme")
-reload("user.keymappins")
-
--- Plugins reload
-reload("plugins.chatgpt")
-reload("plugins.goto_preview")
-reload("plugins.todo_comments")
-reload("plugins.specs")
-reload("plugins.lualine")
+reload "user.chatgpt"
+reload "user.colorscheme"
+reload "user.keymappins"
+reload "user.lsp"
+reload "user.lualine"
+reload "user.notify"
+reload "user.options"
+reload "user.plugins"
+reload "user.specs"
+reload "user.todo_comments"
+reload "user.which_key"
