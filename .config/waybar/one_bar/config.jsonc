@@ -1,216 +1,169 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 20,
-    "modules-left": [
-        "custom/shutdown",
-        "hyprland/workspaces",
-        "hyprland/window"
+  "layer": "top",
+  "position": "top",
+  "height": 20,
+  "modules-left": ["custom/shutdown", "hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock", "custom/weather"],
+  "modules-right": [
+    "temperature",
+    "cpu",
+    "memory",
+    "disk",
+    "backlight",
+    "battery",
+    "pulseaudio",
+    "custom/change-wallpaper",
+    "tray",
+    "network",
+  ],
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "format": "{icon}",
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "󰙯",
+      "6": "",
+      "7": "",
+      "8": "",
+      "9": "",
+      "10": "",
+      "urgent": "",
+    },
+    "sort-by-number": true,
+  },
+  "hyprland/window": {
+    "format": " {}",
+    "max-length": 150,
+    "separate-outputs": false,
+  },
+  "custom/shutdown": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "$HOME/.config/rofi/powermenu/type-4/powermenu.sh",
+  },
+  "clock": {
+    "timezone": "Asia/Jakarta",
+    "format": "{:%H:%M %p}",
+    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format-alt": "{:%H:%M:%S %a %Y-%m-%d}",
+    "interval": 1,
+  },
+  "custom/weather": {
+    "exec": "python3 ~/.config/waybar/scripts/weather.py",
+    "restart-interval": 100,
+    "return-type": "json",
+    "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/5cf75b1f778e8c154ed0390dd5263691ed4a85fa1ca33d8aa1488c3ada96dc4a",
+  },
+  "pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+      "headphone": " ",
+      "hands-free": " ",
+      "headset": " ",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""],
+    },
+    "scroll-step": 1,
+    "on-click-right": "pavucontrol",
+    "ignored-sinks": [],
+  },
+  "tray": {
+    "icon-size": 18,
+    "spacing": 5,
+  },
+  "cpu": {
+    "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
+    "interval": 5,
+    "format-icons": ["▁", "▂", "▃", "▄", "▅", "█"],
+    "on-click-right": "gnome-system-monitor",
+  },
+  "memory": {
+    "interval": 10,
+    "format": "{percentage}% {icon}",
+    "format-alt": "{icon} {used:0.1f}G/{total:0.1f}G",
+    "format-alt-click": "click",
+    "tooltip": true,
+    "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
+    "on-click-right": "kitty --title btop sh -c 'btop'",
+    "format-icons": ["󰒋"],
+  },
+  "network": {
+    "format-wifi": "󰤨  ({signalStrength}%)",
+    "format-ethernet": " ",
+    "tooltip-format": "  {ipaddr}",
+    "format-linked": "  {ifname} (No IP)",
+    "format-disconnected": " ",
+    "format-alt": "  {bandwidthUpBytes}   {bandwidthDownBytes}",
+    "on-click-right": "XDG_CURRENT_DESKTOP=gnome gnome-control-center",
+    "interval": 5,
+  },
+  "temperature": {
+    "critical-threshold": 80,
+    "format": "{icon}{temperatureC}°C",
+    "format-icons": ["", "", "", "", ""],
+  },
+  "custom/change-wallpaper": {
+    "on-click-right": "bash $HOME/.config/hypr/scripts/change-wallpapers",
+    "format": "{icon}",
+    "format-icons": "者",
+  },
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
     ],
-    "modules-center": [
-        "clock",
-        "custom/weather"
-    ],
-    "modules-right": [
-        "temperature",
-        "cpu",
-        "memory",
-        "disk",
-        "backlight",
-        "battery",
-        "pulseaudio",
-        "custom/change-wallpaper",
-        "tray",
-        "network"
-    ],
-    "hyprland/workspaces": {
-        "all-outputs": true,
-        "format": "{icon}",
-        "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "󰙯",
-            "6": "",
-            "7": "",
-            "8": "",
-            "9": "",
-            "10": "",
-            "urgent": "",
-        },
-        "sort-by-number": true
+    "on-scroll-down": "brightnessctl s 1%-",
+    "on-scroll-up": "brightnessctl s +1%",
+    "tooltip": false,
+    "smooth-scrolling-threshold": 1,
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15,
     },
-    "hyprland/window": {
-        "format": " {}",
-        "max-length": 150,
-        "separate-outputs": false
+    "tooltip-format": "{time} {capacity}%",
+    "format": "{icon}",
+    "format-charging": "{icon}",
+    "format-plugged": "{icon}",
+    "format-icons": {
+      "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"],
+      "plugged": "󰚥",
     },
-    "custom/shutdown": {
-        "format": "⏻",
-        "tooltip": false,
-        "on-click": "$HOME/.config/rofi/powermenu/type-4/powermenu.sh",
-    },
-    "clock": {
-        "timezone": "Asia/Jakarta",
-        "format": "{:%H:%M %p}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%H:%M:%S %a %Y-%m-%d}",
-        "interval": 1
-    },
-    "custom/weather": {
-        "exec": "python3 ~/.config/waybar/scripts/weather.py",
-        "restart-interval": 100,
-        "return-type": "json",
-        "on-click": "xdg-open https://weather.com/en-IN/weather/today/l/5cf75b1f778e8c154ed0390dd5263691ed4a85fa1ca33d8aa1488c3ada96dc4a"
-    },
-    "pulseaudio": {
-        "format": "{volume}% {icon}",
-        "format-bluetooth": "{volume}% {icon}",
-        "format-muted": "",
-        "format-icons": {
-            "headphone": " ",
-            "hands-free": " ",
-            "headset": " ",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": [
-                "",
-                ""
-            ]
-        },
-        "scroll-step": 1,
-        "on-click-right": "pavucontrol",
-        "ignored-sinks": []
-    },
-    "tray": {
-        "icon-size": 18,
-        "spacing": 5
-    },
-    "cpu": {
-        "format": "{icon0}{icon1}{icon2}{icon3} {usage:>2}% ",
-        "interval": 5,
-        "format-icons": [
-            "▁",
-            "▂",
-            "▃",
-            "▄",
-            "▅",
-            "█",
-        ],
-        "on-click-right": "gnome-system-monitor",
-    },
-    "memory": {
-        "interval": 10,
-        "format": "{percentage}% {icon}",
-        "format-alt": "{icon} {used:0.1f}G/{total:0.1f}G",
-        "format-alt-click": "click",
-        "tooltip": true,
-        "tooltip-format": "{used:0.1f}GB/{total:0.1f}G",
-        "on-click-right": "kitty --title btop sh -c 'btop'",
-        "format-icons": [
-            "󰒋",
-        ]
-    },
-    "network": {
-        "format-wifi": "󰤨  ({signalStrength}%)",
-        "format-ethernet": " ",
-        "tooltip-format": "  {ipaddr}",
-        "format-linked": "  {ifname} (No IP)",
-        "format-disconnected": " ",
-        "format-alt": "  {bandwidthUpBytes}   {bandwidthDownBytes}",
-        "on-click-right": "XDG_CURRENT_DESKTOP=gnome gnome-control-center",
-        "interval": 5
-    },
-    "temperature": {
-        "critical-threshold": 80,
-        "format": "{icon}{temperatureC}°C",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-    "custom/change-wallpaper": {
-        "on-click-right": "bash $HOME/.config/hypr/scripts/change-wallpapers",
-        "format": "{icon}",
-        "format-icons": "者",
-    },
-    "backlight": {
-        "format": "{percent}% {icon}",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            "",
-            ""
-        ],
-        "on-scroll-down": "brightnessctl s 1%-",
-        "on-scroll-up": "brightnessctl s +1%",
-        "tooltip": false,
-        "smooth-scrolling-threshold": 1
-    },
-    "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "tooltip-format": "{time} {capacity}%",
-        "format": "{icon}",
-        "format-charging": "{icon}",
-        "format-plugged": "{icon}",
-        "format-icons": {
-            "default": [
-                "󰁺",
-                "󰁻",
-                "󰁼",
-                "󰁽",
-                "󰁾",
-                "󰁿",
-                "󰂀",
-                "󰂁",
-                "󰂂",
-                "󰁹"
-            ],
-            "charging": [
-                "󰢜",
-                "󰂆",
-                "󰂇",
-                "󰂈",
-                "󰢝",
-                "󰂉",
-                "󰢞",
-                "󰂊",
-                "󰂋",
-                "󰂅"
-            ],
-            "plugged": "󰚥"
-        }
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
-    },
-    "disk": {
-        "interval": 100,
-        //"format": "󰋊",
-        "path": "/",
-        //"format-alt-click": "click",
-        "format": "{percentage_used}% ",
-        //"tooltip": true,
-        "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
-    },
+  },
+  "battery#bat2": {
+    "bat": "BAT2",
+  },
+  "disk": {
+    "interval": 100,
+    //"format": "󰋊",
+    "path": "/",
+    //"format-alt-click": "click",
+    "format": "{percentage_used}% ",
+    //"tooltip": true,
+    "tooltip-format": "{used} used out of {total} on {path} ({percentage_used}%)",
+  },
 }
